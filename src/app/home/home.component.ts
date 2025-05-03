@@ -39,5 +39,4 @@ export class HomeComponent implements OnInit {
     this.searchTerm = value;
     this.filterUsers();
   }
-
 }

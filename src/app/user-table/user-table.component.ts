@@ -9,6 +9,7 @@ import {User} from '../models/user.model';
   templateUrl: './user-table.component.html',
   styleUrls: ['./user-table.component.css']
 })
+
 export class UserTableComponent {
   @Input() users: User[] = [];
 }
