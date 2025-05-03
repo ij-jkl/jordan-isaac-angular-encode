@@ -1,1 +1,16 @@
-<p>user-table works!</p>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>City</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.address.city }}</td>
+  </tr>
+  </tbody>
+</table>
