@@ -14,6 +14,4 @@ import {User} from '../models/user.model';
 
 export class UserTableComponent {
   @Input() users: User[] = [];
-
-
 }
