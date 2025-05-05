@@ -13,7 +13,7 @@
 
 - Una vez ejecutado los comandos necesarios e instalado las dependencias requeridas podemos observar la aplicacion en : http://localhost:4200
 
-## Finalizad del Proyecto 
+## Finalidad del Proyecto 
 
 - Este proyecto permite filtar por nombre o ciudad una lista de usuarios de " https://jsonplaceholder.typicode.com/users "
 - El proyecto intenta mantener una estructura limpia, es por eso que se intenta manejar el enrutamiento unicamente desde los componentes de app
