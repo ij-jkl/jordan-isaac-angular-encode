@@ -12,6 +12,7 @@ import {User} from '../models/user.model';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
   users: User[] = [];
   filteredUsers: User[] = [];
