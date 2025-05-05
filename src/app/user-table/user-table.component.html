@@ -1,6 +1,8 @@
 <div class="card">
   <p-table
     [value]="users"
+    [paginator]="true"
+    [rows]="10"
     showGridlines
     [tableStyle]="{ 'min-width': '40rem' }">
 
@@ -21,4 +23,5 @@
     </ng-template>
 
   </p-table>
+
 </div>
