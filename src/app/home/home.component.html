@@ -1,4 +1,4 @@
-<body class="bodybackground">
+<div class="bodybackground">
   <div class="search-bar">
     <input
       class="inputButton"
@@ -7,5 +7,10 @@
       (input)="onSearch($any($event.target).value)"
     />
   </div>
-<app-user-table [users]="filteredUsers"></app-user-table>
-</body>
+
+  <app-user-table [users]="filteredUsers"></app-user-table>
+
+  <div class="push-footer">
+    <app-footer></app-footer>
+  </div>
+</div>

@@ -4,11 +4,12 @@ import { UserService } from '../services/user.service';
 import { FormsModule } from '@angular/forms';
 import { UserTableComponent } from '../user-table/user-table.component';
 import {User} from '../models/user.model';
+import {FooterComponent} from '../footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FormsModule, UserTableComponent],
+  imports: [CommonModule, FormsModule, UserTableComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
