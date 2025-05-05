@@ -1,10 +1,19 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
 }
 
-th, td {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  text-align: left;
+:host ::ng-deep .p-datatable th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+:host ::ng-deep .p-datatable th,
+:host ::ng-deep .p-datatable td {
+  width: 33.33%;
 }
