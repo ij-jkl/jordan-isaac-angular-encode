@@ -1,7 +1,10 @@
 .footer {
   background-color: #F1E5D1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6rem;
   text-align: center;
-  padding: 1rem 0;
 }
 
 .h1Title {
