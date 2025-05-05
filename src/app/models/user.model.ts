@@ -1,3 +1,4 @@
+// Interfaz sobre los datos que trae la API
 export interface Address {
   city: string;
 }

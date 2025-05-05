@@ -15,12 +15,14 @@ import {FooterComponent} from '../footer/footer.component';
 })
 
 export class HomeComponent implements OnInit {
+
   users: User[] = [];
   filteredUsers: User[] = [];
   searchTerm: string = '';
 
   constructor(private userService: UserService) {}
 
+  // Inicializamos los usuarios que trajimos
   ngOnInit(): void {
     this.userService.getUsers().subscribe((data) => {
       this.users = data;
@@ -28,6 +30,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  // Normalizamos los nombres y las ciudades para poder buscar independientemente de si hay minuscula o mayuscula
   filterUsers(): void {
     const term = this.searchTerm.toLowerCase();
     this.filteredUsers = this.users.filter(
@@ -37,6 +40,7 @@ export class HomeComponent implements OnInit {
     );
   }
 
+  // Nos permite realizar la busqueda dinamica
   onSearch(value: string): void {
     this.searchTerm = value;
     this.filterUsers();

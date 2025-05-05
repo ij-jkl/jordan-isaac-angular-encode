@@ -8,10 +8,12 @@ import { User } from '../models/user.model';
 })
 
 export class UserService {
+  // Url a la que le pegamos para obtener los usuarios
   private apiUrl = 'https://jsonplaceholder.typicode.com/users';
 
   constructor(private http: HttpClient) {}
 
+  // Realiza la peticion HTTP
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl);
   }
