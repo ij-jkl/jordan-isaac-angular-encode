@@ -1,20 +1,21 @@
+.bodybackground{
+  background-color: #DBB5B5;
+}
+
 .card{
   display: flex;
   flex-direction: column;
   margin: 2rem;
   border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
   padding: 1rem;
 }
 
 :host ::ng-deep .p-datatable th {
-  background-color: #F1E5D1;
   text-align: center;
   vertical-align: middle;
 }
 
 :host ::ng-deep .p-datatable td {
-  background-color: #DBB5B5;
   width: 33.33%;
 }
