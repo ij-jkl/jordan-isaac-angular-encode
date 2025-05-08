@@ -1,5 +1,6 @@
 <!--Inicializamos la tabla y usamos PrimeNg para la paginacion y el dise;o de la tabla-->
 <body class="bodybackground">
+  <p-button label="hola"></p-button>
   <div class="card">
     <p-table
       [value]="users"
@@ -16,7 +17,6 @@
           <th>Ciudad</th>
         </tr>
       </ng-template>
-
       <ng-template pTemplate="body" let-user>
         <tr>
           <td>{{ user.name }}</td>
